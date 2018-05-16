@@ -8,7 +8,15 @@
   <title>CATS JSON from freecodecamp</title>
 </head>
 <body>
-
+  <h1>Now let's see where do we start</h1>
   <script src="node_modules/jquery/dist/jquery.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    $.getJSON("cats.json",function(json){
+      json.forEach(function(element){
+        var keys = Object.keys(element);
+        console.log(keys);
+      });
+    })
+  </script>
 </body>
 </html>
